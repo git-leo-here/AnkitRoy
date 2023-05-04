@@ -232,7 +232,22 @@ header {
 	right: 0;
 }
 /* Add blur to header */
+.blur-header {
+	border-color: transparent;
+}
 
+.blur-header::after {
+	content: " ";
+	position: absolute;
+	width: 1000%;
+	height: 100%;
+	background-color: hsla(0, 0%, 10%, 0.3);
+	backdrop-filter: blur(24px);
+	-webkit-backdrop-filter: blur(24px); /* For safari */
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
 /* Active link */
 
 /*=============== HOME ===============*/
@@ -315,10 +330,30 @@ header {
 }
 
 .button:hover {
-	box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, 0.25);
+	box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, 0.75);
 }
 /*=============== ABOUT ===============*/
+.about__container {
+	row-gap: 2.5rem;
+}
+.about__data {
+	text-align: center;
+}
 
+.about__description {
+	margin-bottom: 2rem;
+}
+.about__image {
+	justify-self: center;
+}
+
+.about__blob {
+	width: 320px;
+}
+
+.about__blob path {
+	stroke: var(--first-color);
+}
 /*=============== SKILLS ===============*/
 
 /*=============== SERVICES ===============*/
