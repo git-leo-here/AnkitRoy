@@ -57,11 +57,24 @@ const sendEmail = (e) => {
 			() => {
 				contactMessage.innerHTML = "Your message has been sent!"
 				contactMessage.style.color = "aquamarine"
+				//Remove message after 5 seconds
+				setTimeout(() => {
+					contactMessage.innerHTML = ""
+				}, 5000)
+
+				// Reset form after submission
 				contactForm.reset()
 			},
 			() => {
 				contactMessage.innerHTML = "Oops! Something went wrong."
 				contactMessage.style.color = "red"
+				//Remove message after 5 seconds
+				setTimeout(() => {
+					contactMessage.innerHTML = ""
+				}, 5000)
+
+				// Reset form after submission
+				contactForm.reset()
 			}
 		)
 }
