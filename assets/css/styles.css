@@ -816,7 +816,21 @@ body.stopScrollling {
 	margin-top: 1rem;
 }
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+	width: 0.6rem;
+	border-radius: 0.5rem;
+	background-color: hsl(228, 12%, 25%);
+}
 
+::-webkit-scrollbar-thumb {
+	background-color: hsl(228, 8%, 35%);
+	border-radius: 0.5rem;
+	transition: background-color 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: hsl(228, 8%, 45%);
+}
 /*=============== SCROLL UP ===============*/
 
 /* Show Scroll Up */
