@@ -861,7 +861,66 @@ body.stopScrollling {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+	.container {
+		margin-inline: 1rem;
+	}
+	.skills__content {
+		grid-template-columns: max-content;
+		row-gap: 1rem;
+	}
+
+	.services__card {
+		padding-block: 1.5rem;
+	}
+}
 
 /* For medium devices */
+@media screen and (min-width: 576px) {
+	.home__container,
+	.about__container,
+	.services__container,
+	.skills__container {
+		grid-template-columns: 360px;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.nav__menu {
+		width: 55%;
+	}
+
+	.home__container,
+	.about__container,
+	.skills__container {
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+	}
+
+	.home__data,
+	.about__data,
+	.skills__data,
+	:is(.about__data, .skills__data) {
+		text-align: initial;
+	}
+
+	.home__social {
+		justify-content: initial;
+	}
+
+	.home__blob,
+	.about__blob {
+		width: 400px;
+	}
+
+	.about__data {
+		order: 1;
+	}
+
+	.services__container {
+		grid-template-columns: repeat(2, 352px);
+	}
+}
 
 /* For large devices */
