@@ -115,8 +115,6 @@ const scrollActive = () => {
 }
 window.addEventListener("scroll", scrollActive)
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
 /*=============== PORTFOLIO ===============*/
 const projects = [
 	{
@@ -261,3 +259,19 @@ function changeImage(index) {
 	images.innerHTML = ""
 	images.innerHTML = `<img src=${projects[index].img} class="showImage" alt="" srcset="">`
 }
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+	origin: "top",
+	distance: "60px",
+	duration: 2000,
+	delay: 200,
+	reset: false, // true means animation will reset and thus repeat on every scroll
+})
+
+sr.reveal(".home__data , .home__social , .contact__container")
+sr.reveal(".home__image , .footer__container", { origin: "bottom" })
+sr.reveal(".about__data , .skills__data", { origin: "left" })
+sr.reveal(".about__image, .skills__content", { origin: "right" })
+sr.reveal(".services__card ", { interval: 100 })
+sr.reveal(".portfolio-gallery ", { origin: "right" })
