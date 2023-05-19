@@ -33,7 +33,7 @@
 				<div class="nav__menu" id="nav-menu">
 					<ul class="nav__list">
 						<li class="nav_item">
-							<a href="#home" class="nav__link">Home</a>
+							<a href="#home" class="nav__link active-link">Home</a>
 						</li>
 						<li class="nav_item">
 							<a href="#about" class="nav__link">About</a>
@@ -132,7 +132,7 @@
 
 			<!--==================== ABOUT ====================-->
 			<section class="about section" id="about">
-				<div class="about__conntainer container grid">
+				<div class="about__container container grid">
 					<div class="about__data">
 						<h3 class="section__subtitle">
 							My <span>Intro</span>
@@ -274,6 +274,7 @@
 
 			<!--==================== PROJECTS ====================-->
 			<section class="portfolio section" id="projects" style="background-color:white;">
+				<div class="projects__container">
 				<!--====================  Modals for each Project ====================-->
 				<div class="modal">
 					<div class="modal-overlay">
@@ -332,6 +333,7 @@
 						</div>-->
 					</div>
 				</div>
+				</div>
 			</section>
 
 			<!--==================== CONTACT ====================-->
@@ -362,12 +364,35 @@
 		</main>
 
 		<!--==================== FOOTER ====================-->
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__container container grid">
+				<div>
+					<h1 class="footer__title">Ankit <span>Roy</span></h1>
+					<h2 class="footer__education">Software Engineer</h2>
+				</div>
+				<div class="footer__social">
+					<a href="https://linkedin.com/in/ankit-roy-04349421a" target="_blank" class="footer__social-link">
+						<i class="ri-linkedin-box-fill"></i>
+					</a>
+					<a href="https://github.com/git-leo-here" target="_blank" class="footer__social-link">
+						<i class="ri-github-fill"></i>
+					</a>
+					<a href="https://codepen.io/Leo_the_lion" target="_blank" class="footer__social-link">
+						<i class="ri-codepen-fill"></i>
+					</a>
+				</div>
+				<span class="footer__copy">
+				&copy; 2023 Ankit Roy. All rights reserved.
+				</span>
+			</div>
+		</footer>
 
 		<!--========== SCROLL UP ==========-->
-
+		<a href="#" class="scrollup" id="scroll-up">
+			<i class="ri-arrow-up-line"></i>
+		</a>
 		<!--=============== SCROLLREVEAL ===============-->
-		<script src=""></script>
+		<script src="./assets/js/scrollreveal.min.js"></script>
 
 		<!--=============== EMAIL JS ===============-->
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
