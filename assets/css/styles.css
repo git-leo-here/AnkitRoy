@@ -741,6 +741,23 @@ body.stopScrollling {
 	border-radius: 0.5rem;
 	background-color: var(--container-color);
 	color: var(--title-color);
+	transition: all 0.3s;
+}
+.contact__input:hover::placeholder {
+	color: var(--first-color);
+}
+.contact__input:hover {
+	outline: 2px solid var(--first-color-alt);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact__input:focus::placeholder {
+	color: var(--first-color);
+}
+
+.contact__input:focus {
+	outline: 2px solid var(--first-color-alt);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contact__input::placeholder {
